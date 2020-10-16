@@ -107,3 +107,11 @@ Example for repositories search
   }
 ]
 ```
+
+## Tests
+
+Run tests with
+
+```sh
+python -m unittest discover
+```
