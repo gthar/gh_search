@@ -62,8 +62,8 @@ def fetch_links(keywords, page_type, gh_url):
         else:  # I consider any other status code as an error
             break
 
-    logger.error('could not retrieve data from `{search_url}`')
-    logger.error('http status code: {status}')
+    logger.error(f'could not retrieve data from `{search_url}`')
+    logger.error(f'http status code: {status}')
     sys.exit(1)
 
 
@@ -93,8 +93,8 @@ async def fetch_page_async(url, session):
             else:  # I consider any other status code as an error
                 break
 
-    logger.error('could not retrieve data from `{search_url}`')
-    logger.error('http status code: {status}')
+    logger.error(f'could not retrieve data from `{search_url}`')
+    logger.error(f'http status code: {status}')
     sys.exit(1)
 
 
