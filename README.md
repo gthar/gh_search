@@ -3,31 +3,18 @@
 Technical test implementing a github search crawler.
 
 
-## Installation
-
-```sh
-python setup.py install
-```
-
-The executable `gh_search.py` will be available
-
-
-## Run without installing
-
-Make sure the requirements are met
+## Install depenencies
 
 ```sh
 pip install -r requirements.txt
 ```
 
-And simply run the `gh_search.py` script from within this directory
-
 ## Usage:
 
 ```sh
-gh_search.py ${INPUT_FILE} [--output=${OUT_FILE} | -o ${OUT_FILE}] [--verbose | --quiet]
-gh_search.py (-h | --help)
-gh_search.py --version
+python gh_search.py ${INPUT_FILE} [--output=${OUT_FILE} | -o ${OUT_FILE}] [--verbose | --quiet]
+python gh_search.py (-h | --help)
+python gh_search.py --version
 ```
 
 Where `$INPUT_FILE` is a valid JSON input file and `$OUT_FILE` is where the output will be stored in JSON format.
