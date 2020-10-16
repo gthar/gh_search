@@ -52,7 +52,7 @@ def read_input(infile):
     page_type = str(page_type).lower()
 
     if page_type not in ('repositories', 'issues', 'wikis'):
-        logger.error('invalid type: `{page_type}`')
+        logger.error(f'invalid type: `{page_type}`')
         sys.exit(1)
 
     return keywords, proxies, page_type
@@ -60,7 +60,7 @@ def read_input(infile):
 
 def write_output(result, outfile=None):
     if outfile:
-        logger.info('writing to file: `{outfile}`')
+        logger.info(f'writing to file: `{outfile}`')
         with open(outfile, 'w') as fh:
             json.dump(result, fh, indent=2)
     else:
