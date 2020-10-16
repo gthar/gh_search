@@ -93,7 +93,7 @@ async def fetch_page_async(url, session):
             else:  # I consider any other status code as an error
                 break
 
-    logger.error(f'could not retrieve data from `{search_url}`')
+    logger.error(f'could not retrieve data from `{url}`')
     logger.error(f'http status code: {status}')
     sys.exit(1)
 
